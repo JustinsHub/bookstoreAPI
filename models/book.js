@@ -72,15 +72,15 @@ class Book {
             publisher,
             title,
             year) 
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8) 
-         RETURNING isbn,
-                   amazon_url,
-                   author,
-                   language,
-                   pages,
-                   publisher,
-                   title,
-                   year`,
+        VALUES ($1, $2, $3, $4, $5, $6, $7, $8) 
+        RETURNING isbn,
+                  amazon_url,
+                  author,
+                  language,
+                  pages,
+                  publisher,
+                  title,
+                  year`,
       [
         data.isbn,
         data.amazon_url,
