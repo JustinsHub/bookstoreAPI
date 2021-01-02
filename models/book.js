@@ -147,8 +147,8 @@ class Book {
   static async remove(isbn) {
     const result = await db.query(
       `DELETE FROM books 
-         WHERE isbn = $1 
-         RETURNING isbn`,
+        WHERE isbn = $1 
+        RETURNING isbn`,
         [isbn]);
 
     if (result.rows.length === 0) {
