@@ -9,6 +9,7 @@ app.use(express.json());
 const ExpressError = require("./expressError")
 const bookRoutes = require("./routes/books");
 
+debugger;
 app.use("/books", bookRoutes);
 
 /** 404 handler */
